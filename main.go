@@ -22,6 +22,8 @@ func handleCommand(text string, disks *[]string) {
 		}
 	case "exit":
 		os.Exit(0)
+	case "help":
+		cmd_help()
 	default:
 		fmt.Println("Command not recognized.")
 	}
