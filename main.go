@@ -25,7 +25,7 @@ func handleCommand(text string, disks *[]string) {
 	case "help":
 		cmd_help()
 	default:
-		fmt.Println("Command not recognized.")
+		fmt.Printf("rbash: %s: command not found\n", text)
 	}
 }
 
